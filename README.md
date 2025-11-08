@@ -1,2 +1,2 @@
-# broso56-cookie.github.io
+# cookie-thing
 cookie
