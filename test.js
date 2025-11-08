@@ -7,7 +7,7 @@ BroboMod.GameVersion = '2.052';
 
 BroboMod.launch = function(){
 	BroboMod.isLoaded = 1;
-	if (Game.prefs.popups) Game.Popup(BroboMod.name + ' loaded!');
+	if (Game.prefs.popups) Game.Popup(BroboMod.name + ' loadedaaaaaaaaaaaaaaaaaaaaaaaaaa!');
 	else Game.Notify(BroboMod.name + ' loaded!', '', '', 1, 1);
 }
 
