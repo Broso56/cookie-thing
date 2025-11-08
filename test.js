@@ -11,10 +11,13 @@ BroboMod.launch = function(){
 		if (Game.prefs.popups) Game.Popup(BroboMod.name + ' loadedaaaaaaaaaaaaaaaaaaaaaaaaaa!');
 		else Game.Notify(BroboMod.name + ' loaded!', '', '', 1, 1);
 	
-		CCSE.AppendOptionsMenu('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA - brobo');
-		CCSE.AppendStatsGeneral("B: 56");
-		CCSE.AppendStatsVersionNumber(BroboMod.name, BroboMod.version);
+		Game.customStatsMenu.push(function(){
+			CCSE.AppendStatsVersionNumber(BroboMod.name, BroboMod.version);
+			CCSE.AppendStatsSpecial("B: 56");
+		});
 	};
+
+
 }
 
 if(!BroboMod.isLoaded){
